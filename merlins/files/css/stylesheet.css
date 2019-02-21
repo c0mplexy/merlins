@@ -1,0 +1,409 @@
+/*Nicolas Gonzalez*/
+ * {
+     margin: 0;
+     padding: 0;
+}
+ html {
+     font-size: 16px;
+     height: 100%;
+}
+ header, nav, section, article, footer {
+     display: block;
+}
+/*----------------------- Header/menu -------------------------*/
+ header {
+     height: auto;
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     padding-top: 10px;
+}
+ header h1 {
+     order: 1;
+     margin: 25px 0;
+     height: auto;
+     width: 250px;
+     font-family: "Oswald", sans-serif;
+     font-size: 1.6em;
+     color: #f64d20;
+     display: flex;
+     flex-wrap: wrap;
+     letter-spacing: 3px;
+     text-align: left;
+     font-weight: lighter;
+}
+ header h1::after {
+     content: "- fine potions since 1026 -";
+     color: #4f336d;
+     font-family: initial;
+     font-size: 0.5em;
+     font-style: italic;
+     font-weight: bold;
+     padding: 0 0 50px 20px;
+}
+ header span {
+     color: #eb3606;
+     font-family: "Oswald", sans-serif;
+     font-size: 1em;
+     font-weight: bold;
+}
+ nav {
+     height: 90px;
+     width: 60%;
+     display:block;
+     order: 5;
+     margin-top: -50px;
+     background-color: #4f336d;
+}
+ .mainMenu {
+     list-style: none;
+     font-style: italic;
+     font-size: 1.2em;
+     display: flex;
+     padding: 10px 0;
+     cursor: pointer;
+     margin-top:-5px;
+     margin-left: -25px;
+}
+ .mainMenu > li {
+     padding: 30px 20px 25px 20px;
+     color: whitesmoke;
+     border-radius: 5px;
+}
+ .mainMenu > li:hover {
+     background-color: #412a56;
+}
+ .mainMenu > li:first-child {
+     margin-left: 10%;
+}
+ .mainMenu > li:last-child {
+     padding: 30px 0 25px 0;
+     display: flex;
+     margin-left: 15%;
+}
+ .mainMenu > li:last-child span {
+     color: rgba(222, 222, 222, 0.7);
+     padding: 0 10px;
+     font-family: initial;
+     font-weight: 300;
+}
+ li:active {
+     background-color: #412a56;
+}
+ .searchbox {
+     height: 20px;
+     width: 300px;
+     order: 2;
+     margin: 30px 30px 0 40px;
+     padding: 10px;
+     font-family: initial;
+     font-size: 1em;
+     border-radius: 5px;
+     border: 1px solid;
+}
+ .promote {
+     height: auto;
+     width: 150px;
+     order: 3;
+     padding: 10px 0;
+     text-align: center;
+     margin-top: 20px;
+     color: #eb3606;
+     font-style: italic;
+     font-family: initial;
+     font-size: 1.1em;
+}
+ .container {
+     height: auto;
+     width: 100%;
+     margin: 0 auto;
+     justify-content: center;
+}
+ .flex {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+}
+ .image {
+     height: 200px;
+     width: 200px;
+}
+ .center-align {
+     text-align: center;
+}
+ .redFooter {
+     margin-top:25px;
+     width: 200px;
+     cursor: pointer;
+}
+ #bagNumber {
+     color: #D73A1E;
+     font-weight: bold;
+}
+ #bag{
+     background: url(../images/bag/bag.png) left no-repeat;
+     ] color: #B3B3C3;
+     font-weight: bold;
+     position:absolute;
+     text-align:right;
+     width: 5%;
+     height: 40px;
+     margin-left:1000px;
+     margin-top:30px;
+     cursor:pointer;
+}
+/*------------------------ Display --------------------------*/
+ #content {
+     height: auto;
+     padding: 25px 4%;
+     width: 92%;
+}
+ #contentHeader {
+     margin-bottom: 50px;
+     font-size: 1em;
+     font-weight: bold;
+     width: 100%;
+}
+ .produtos {
+     width: 100%;
+}
+ .price {
+     color: #F73A1E;
+}
+ #potionsDisplay {
+     overflow: hidden;
+     width: 50%;
+     margin-top: 20px;
+     margin-left: 70px;
+}
+ .display {
+     float: left;
+     margin-bottom: 20px;
+     padding-bottom: 25%;
+     position: relative;
+     text-align: center;
+     width: 25%;
+     margin-left: 10px;
+}
+ .displayFigure {
+     cursor: pointer;
+     left: 10px;
+     position: absolute;
+     right: 10px;
+     top: 10px;
+     bottom: 10px;
+     overflow: hidden;
+}
+ .displayFigure img {
+     width: 70%;
+}
+ .displayFigure .displayTitle {
+     position: absolute;
+     bottom: 40px;
+     left: 0;
+     right: 0;
+     color: #000000;
+     font-size: 1em;
+     font-weight: bold;
+     text-align: center;
+}
+/*----------------------------- Footer ------------------------------*/
+ footer {
+     background-color: #E6E6E6;
+}
+ footer div.flex {
+     background-color: #E6E6E6;
+     float:left;
+     position:absolute;
+     width:62%;
+     justify-content: initial;
+}
+ #first {
+     order: 4;
+     height: 150px;
+}
+ #third{
+     order: -1;
+}
+ #fourth {
+     order: 4;
+}
+ #newsletter {
+     font-family: initial;
+     color: black;
+     font-size: 50%;
+     float:right;
+     border-radius: 2px;
+     background-color: white;
+     padding: 20px 15px;
+     padding-right: 20px;
+     width: 300px;
+     height:125px;
+     position:absolute;
+     margin-top:15px;
+     margin-left: 615px;
+}
+ #newsletter h3 {
+     font-size: 1.2em;
+}
+ #newsletter p {
+     font-size: 0.8em;
+}
+ #emailBox {
+     padding: 10px 0 10px 5px;
+     margin-top: 30px;
+     border: 1px solid grey;
+     border-radius: 5px;
+}
+ #butSubmit {
+     background: #eb3606;
+     border: none;
+     color: white;
+     padding: 10px 5%;
+     border-radius: 5px;
+     font-family: initial;
+     cursor: pointer;
+}
+ #first {
+     width: 200px;
+     font-size: 2em;
+     color: #412a56;
+     margin: 0;
+     float:right;
+}
+ #first div i {
+     cursor: pointer;
+}
+ #second {
+     display: flex;
+     width: 50%;
+     position:absolute;
+}
+ #second p {
+     font-family: "Droid Sans", sans-serif;
+     font-size: 1.4em;
+     color: #eb3606;
+     margin-left:10px;
+     font-weight: bold;
+}
+ #third {
+     display:flex;
+     width: 200px;
+     height: 10px;
+     font-size: 2em;
+     margin-top: 30px;
+     color: #ffffff;
+     position :relative;
+}
+ #fourth {
+     font-family: initial;
+     font-size: 0.9em;
+     color: gray;
+     height: auto;
+     width: 100%;
+     margin: 10px 0;
+}
+ #socialMedia li a {
+     display: inline;
+     order:4 ;
+     float:left;
+     position:absolute z-index: 1000;
+     margin-right:30px;
+}
+ #socialMedia {
+     margin-top: 80px;
+     display:flex;
+     list-style: none;
+     float:left;
+}
+/*----------------------------- Lightbox -----------------------------*/
+ .lightbox {
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     position: fixed;
+     background-color: rgba(0, 0, 0, 0.6);
+     opacity: 0;
+     transform: scale(0);
+}
+ .lightboxDisplay {
+     top: 90px;
+     right: 350px;
+     bottom: 90px;
+     left: 350px;
+     position: absolute;
+     background: linear-gradient(to top, #ececec, white);
+     border-radius: 10px;
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+     opacity: 0;
+     display: flex;
+     align-items: center;
+}
+ .lightboxDisplay.animated {
+     opacity: 1;
+     transform: translateY(0);
+}
+ .lightboxDisplay h3 {
+     font-family: "Droid Sans", sans-serif;
+     font-size: 2em;
+     margin: 10px 0;
+}
+ .lightboxDisplay h2 {
+     margin: 20px 0;
+}
+ .lightboxDisplay p {
+     font-family: "Droid Sans", sans-serif;
+     font-size: 0.9em;
+     height: initial;
+     width: 300px;
+}
+ .lightboxDisplay span {
+     color: #eb3606;
+}
+ .lightboxDisplay span::before {
+     content: "$";
+}
+ .lbContainer {
+     padding: 10px 10px;
+     display: flex;
+}
+ .lbContainer ul li {
+     font-family: "Droid Sans", sans-serif;
+     font-size: 0.8em;
+     list-style: none;
+}
+ #lbImage {
+     height: 550px;
+     width: 550px;
+     margin: auto 0;
+}
+ .lightbox[lbStatus="visible"] {
+     opacity: 1;
+     transform: scale(1);
+}
+ #btnFechar {
+     position: absolute;
+     text-decoration: none;
+     color: #4f336d;
+     top: 10px;
+     right: 0;
+     bottom: initial;
+     left: initial;
+     font-family: initial;
+     color:red;
+     font-size: 1.5em;
+     height: 30px;
+     width: 30px;
+}
+ #btnADD {
+     padding: 10px 20px;
+     font-family: initial;
+     font-size: 1em;
+     background-color: #eb3606;
+     color: white;
+     border: none;
+     cursor: pointer;
+     border-radius: 10px;
+}
+ /*--------------------------------------------------------------------*/

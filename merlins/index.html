@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Merlin's Potions - Fine potions since 1026</title>
+      <link rel="stylesheet" type="text/css" href="files/css/stylesheet.css">
+      <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+   </head>
+   <body>
+         <header>
+            <nav id="menu">
+               <ul class="mainMenu">
+                  <li>Potions</li>
+                  <li>Ingredients</li>
+                  <li>Books</li>
+                  <li>Supplies</li>
+                  <li>Charms</li>
+                  <li>Clearance!</li>
+                  <li>Sign In <span>or</span> Sign Up</li>
+               </ul>
+            </nav>
+            <input type="text" id="searchBox" class="searchbox" placeholder="search our stock" />
+            <h1 id="logo"> <span> &nbsp;&nbsp;MERLIN'S </span> POTIONS </h1>
+            <p class="promote">Free shipping on orders over $50</p>
+            <div id="bag">
+               <p>BAG: <span id="bagNumber">1</span></p>
+            </div>
+         </header>
+         <div class="produtos">
+            <div id="potionsDisplay">
+               <div potID="1" class="display" onclick="chamar_lightbox(this);">
+                  <figure class="displayFigure">
+                     <img src="files/images/potions/aging-potion.png" alt="aging potion">
+                     <figcaption class="displayTitle">Aging Potion - <span class="price">$29.99</span></figcaption>
+                  </figure>
+               </div>
+               <div potID="2" class="display" onclick="chamar_lightbox(this);">
+                  <figure class="displayFigure">
+                     <img src="files/images/potions/bulgeye-potion.png" alt="bulgeye potion">
+                     <figcaption class="displayTitle">Bulgeye Potion - <span class="price">$19.99</span></figcaption>
+                  </figure>
+               </div>
+               <div potID="3" class="display" onclick="chamar_lightbox(this);">
+                  <figure class="displayFigure">
+                     <img src="files/images/potions/dragon-tonic.png" alt="dragon tonic">
+                     <figcaption class="displayTitle">Dragon Tonic - <span class="price">$64.99</span></figcaption>
+                  </figure>
+               </div>
+               <div potID="4" class="display" onclick="chamar_lightbox(this);">
+                  <figure class="displayFigure">
+                     <img src="files/images/potions/love-potion.png" alt="love potion">
+                     <figcaption class="displayTitle">Love Potion - <span class="price">$29.99</span></figcaption>
+                  </figure>
+               </div>
+               <div potID="5" class="display" onclick="chamar_lightbox(this);">
+                  <figure class="displayFigure">
+                     <img src="files/images/potions/polyjuice-potion.png" alt="polyjuice potion">
+                     <figcaption class="displayTitle">Polyjuice Potion - <span class="price">$99.99</span></figcaption>
+                  </figure>
+               </div>
+               <div potID="6" class="display" onclick="chamar_lightbox(this);">
+                  <figure class="displayFigure">
+                     <img src="files/images/potions/sleeping-draught.png" alt="sleeping draught">
+                     <figcaption class="displayTitle">Sleeping Draught - <span class="price">$14.99</span></figcaption>
+                  </figure>
+               </div>
+            </div>
+         </div>
+         <footer>
+            <div class="container flex">
+               <section id="first">
+                  <div id="newsletter">
+                     <h3>Sign up for our Newsletter</h3>
+                     <p>Sign up for our newsletter & get exclusive discounts!</p>
+                     <input id="emailBox" type="email" placeholder="Enter you email" />
+                     <input id="butSubmit" type="submit" value="SUBMIT"/> 
+                  </div>
+               </section>
+               <section id="second">
+                  <div class="redFooter">
+                     <p>COMPANY RETURNS</p>
+                  </div>
+                  <div class="redFooter">
+                     <p>CONTACT US CAREERS</p>
+                  </div>
+                  <div class="redFooter">
+                     <p>SHIPPING</p>
+                  </div>
+               </section>
+               <section id="third">
+                  <ul id="socialMedia">
+                     <li><a href="https://www.facebook.com/" target="_blank"><img src="files/images/socialmedia/facebook.jpg" alt="facebook"></a></li>
+                     <li><a href="https://twitter.com/login?lang=pt" target="_blank"><img src="files/images/socialmedia/twitter.jpg" alt="twitter"></a></li>
+                     <li><a href="https://br.pinterest.com/" target="_blank"><img src="files/images/socialmedia/pinterest.jpg" alt="pinterest"></a></li>
+                     <li><a href="https://66.media.tumblr.com/7d9207b40a74f61831b0277fedc9d06c/tumblr_nc28eyapnH1rh92sko1_500.gif" target="_blank"><img src="files/images/socialmedia/tumblr.jpg" alt="tumblr"></a></li>
+                     <li><a href="https://exame.abril.com.br/tecnologia/google-sera-descontinuado-apos-problema-com-seguranca-de-dados/" target="_blank"><img src="files/images/socialmedia/google-plus.jpg" alt="google plus l0l"></a></li>
+                  </ul>
+               </section>
+               <section id="fourth">
+                  <a>&copy; 2015 Merlin's Potions. All Rights Reserved</a>
+               </section>
+            </div>
+         </footer>
+         <section id="fifth">
+            <div id="overlay" class="lightbox" lbstatus="hidden">
+               <div id="lightboxDisplay" class="lightboxDisplay">
+                  <a id="btnFechar" href="#!" onclick="fechar_lightbox()">X</a>
+                  <div id="lbContainer" class="lbContainer">
+                     <img id="lbImage" src=""/>
+                     <div>
+                        <h2 id="potName"></h2>
+                        <h2>Use/Effect:</h2>
+                        <p id="potDesc"></p>
+                        <h3>Ingredients:</h3>
+                        <ul id="potIngred"></ul>
+                        <h2>Price:<br><span id="potPrice"></span></h2>
+                        <input type="submit" id="btnADD" value="ADD TO CART"/>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <script src="files/js/main.js" async></script>
+   </body>
+</html>
